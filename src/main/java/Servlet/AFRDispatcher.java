@@ -36,6 +36,8 @@ public class AFRDispatcher extends HttpServlet {
 
                 request.setAttribute("adder","/AggiuntaDocumento");
 
+                request.setAttribute("finder","RicercaDocumento");
+
                 request.setAttribute("name","Documenti");
                 request.setAttribute("payload",docPage());
                 break;
