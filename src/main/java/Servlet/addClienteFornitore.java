@@ -15,7 +15,8 @@ public class addClienteFornitore extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/formAddCf.jsp");
+        String dest = "/formAddCf.jsp";
+        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(dest);
         dispatcher.forward(request,response);
     }
 
